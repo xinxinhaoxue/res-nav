@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>资源分享-新新好学</title>
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+  <div id="app">
+    <h2>资源分享</h2>
+    <ul>
+      <li v-for="(item, index) in list" :key="index"><span>{{ item.title }}</span><a :href="item.aHref">点击进入</a></li>
+    </ul>
+    <div class="footer">
+      <p>&copy;2023-2025 B站@新新好学. 保留所有权利.</p>
+    </div>
+  </div>
+  <script src="./js/axios.min.js"></script>
+  <script src="./js/vue.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>
